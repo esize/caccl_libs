@@ -1,0 +1,55 @@
+{
+  "name": "caccl-api",
+  "version": "2.2.12",
+  "description": "A class that defines a set of smart Canvas endpoints that actually behave how you'd expect them to.",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "build": "rm -rf lib && tsc --project ./tsconfig.json && npm run build-docs",
+    "build-docs": "rm -rf ./docBuilder/template && cp -r ./node_modules/docdash ./docBuilder/template && node ./docBuilder/updateBuilder.js && rm -rf ./docs && ./node_modules/.bin/jsdoc -c ./docBuilder/jsdocConfig.json && echo \"\n\nDone!\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harvard-edtech/caccl-canvas-api.git"
+  },
+  "keywords": [
+    "Canvas",
+    "API",
+    "endpoints",
+    "smart",
+    "CACCL"
+  ],
+  "author": "Gabe Abrams <gabeabrams@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/harvard-edtech/caccl-canvas-api/issues"
+  },
+  "homepage": "https://github.com/harvard-edtech/caccl-canvas-api#readme",
+  "devDependencies": {
+    "@types/async": "^3.2.12",
+    "@types/json5": "^2.2.0",
+    "@types/node": "^17.0.17",
+    "@types/parse-link-header": "^1.0.1",
+    "@types/url-parse": "^1.4.8",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
+    "copyfiles": "^2.4.1",
+    "docdash": "^1.2.0",
+    "doctrine": "^2.1.0",
+    "eslint": "^8.19.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.5.3",
+    "eslint-plugin-jsx-a11y": "^6.6.0",
+    "jsdoc": "^4.0.0",
+    "rimraf": "^3.0.2",
+    "taffydb": "^2.7.3",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "caccl-error": "^2.2.12",
+    "caccl-send-request": "^2.2.12",
+    "fast-clone": "^1.5.13"
+  }
+}

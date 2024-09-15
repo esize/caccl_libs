@@ -1,0 +1,42 @@
+{
+  "name": "caccl-send-request",
+  "version": "2.2.12",
+  "description": "The default request sender used throughout the CACCL project.",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "build": "tsc --project ./tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harvard-edtech/caccl-send-request.git"
+  },
+  "keywords": [
+    "HTTPS",
+    "HTTP",
+    "send",
+    "request",
+    "request",
+    "CACCL"
+  ],
+  "author": "Gabe Abrams <gabeabrams@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/harvard-edtech/caccl-send-request/issues"
+  },
+  "homepage": "https://github.com/harvard-edtech/caccl-send-request#readme",
+  "devDependencies": {
+    "@types/node": "^20.12.4",
+    "@types/qs": "^6.9.7",
+    "eslint": "^8.9.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "caccl-error": "^2.2.12",
+    "qs": "^6.9.6"
+  }
+}
